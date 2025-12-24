@@ -103,10 +103,6 @@ main{
 .banner-text p{
     font-family: ginto, helvetica, arial, sans-serif;
 }
-.banner-text a{
-    text-decoration: none;
-    color: #0578FF;
-}
 .page-hero-three-col-preview{
     display: flex;
     justify-content: space-around;
@@ -154,134 +150,26 @@ main{
 .col:hover .img-wrap img {
     transform: scale(1.05);
 }
+.col h3 {
+    transition: color 0.3s ease;
+}
 .col:hover h3 {
     color: #1679C4;
+}
+.col p {
+    transition: color 0.3s ease;
 }
 .col:hover p {
     color: #1679C4;
     transform: translateX(5px);
     transition: transform 0.35s ease;
 }
-.main-banner-doctor-love h1{
+.main-banner-wrapper h1{
     font-family: GT Super Display, Times New Roman, "serif";
     font-size: 4.5rem;
     line-height: 5rem;
     color: #0578FF;
 }
-.main-banner-doctor-love{
-    text-align: center;
-    padding-top: 40px;
-}
-.main-banner-doctor-love p{
-    font-family: ginto, helvetica, arial, sans-serif;
-    font-size: 1.2rem;
-    color: #0d47a1;
-    margin-top: 20px;
-}
-.main-banner-doctor-love h6{
-    color: #0578FF;
-    cursor: pointer;
-    font: 14px ginto, helvetica, arial, sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin-top: 20px;
-    gap: 5px;
-}
-.main-banner-doctor-love h6:hover{
-    color: #1679C4;
-    transform: translateX(5px);
-    transition: transform 0.35s ease;
-}
-.services-section{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 90%;
-    margin: auto;
-}
-.services-detail{
-    display: flex;
-    justify-content: space-around;
-}
-.services-section img{
-    width: 150px;
-    height: 120px;
-    cursor: pointer;
-}
-.services-detail-row p{
-    color: #1679C4;
-    font: 14px ginto, helvetica, arial, sans-serif;
-}
-.services-detail-row{
-    text-align: center;
-}
-.services-detail-row:hover p {
-    color: #1679C4;
-    transform: translateX(5px);
-    transition: transform 0.35s ease;
-}
-footer{
-    background: linear-gradient(to bottom, #1b85ff6e 0%, #1679C4 50%);
-    color: white;
-    width: 100%;
-    padding-bottom: 40px;
-}
-.footer-sign-up{
-    text-align: center;
-    padding: 40px 20px;
-}
-.footer-sign-up h1{
-    font-family: GT Super Display, Times New Roman, "serif";
-    font-size: 3.5rem;
-    line-height: 4rem;
-    color: white;
-}
-.footer-sign-up button{
-    margin-top: 12px;
-    padding: 15px 30px;
-    background-color: white;
-    color: #1679C4;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    font: 14px ginto, helvetica, arial, sans-serif;
-    font-weight: 700;
-    width: 200px;
-}
-.footer-about-us{
-    width: 95%;
-    margin: auto;
-    display: flex;
-    padding-top: 30px;
-}
-.social-media-icons {
-    display: flex;
-    gap: 15px;
-}
-.about-us-content-left{
-    width: 50%;
-}
-.about-us-content-right{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin-left: 300px;
-}
-.footer-links-column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.footer-links-column h4 {
-    font-size: 1.2rem;
-    color: white;
-    margin-bottom: 10px;
-}
-.footer-links-column a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.795);
-    font-size: 1.0rem;
-}
-.footer-links-column a:hover {
-    color: white;
+.rotating-services-warpper {
+    
 }
