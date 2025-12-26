@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .register-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .register-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #667eea, #764ba2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 14px 15px;
+            border: 2px solid #e1e1e1;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+            background-color: #f9f9f9;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="email"]:focus {
+            border-color: #667eea;
+            background-color: white;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .input-icon {
+            position: relative;
+        }
+
+        .input-icon i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+        }
+
+        .btn-register {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-register:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 14px rgba(102, 126, 234, 0.3);
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 25px;
+            color: #666;
+            font-size: 15px;
+        }
+
+        .login-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .login-link a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .password-requirements {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .success-message {
+            color: #2ecc71;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .terms {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .terms input {
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+
+        .terms a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .register-container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h1>Đăng ký tài khoản</h1>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="hoten">Họ và tên:</label>
+                <input type="text" id="hoten" name="hoten" placeholder="Nhập họ và tên của bạn" required>
+                <div class="error-message" id="hotenError">Vui lòng nhập họ và tên hợp lệ</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" name="username" placeholder="Chọn tên đăng nhập" required>
+                <div class="error-message" id="usernameError">Tên đăng nhập phải có ít nhất 4 ký tự</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email" required>
+                <div class="error-message" id="emailError">Vui lòng nhập địa chỉ email hợp lệ</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" placeholder="Tạo mật khẩu" required>
+                <div class="password-requirements">Mật khẩu phải có ít nhất 6 ký tự, bao gồm chữ và số</div>
+                <div class="error-message" id="passwordError">Mật khẩu phải có ít nhất 6 ký tự</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirm_password">Xác nhận mật khẩu:</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Nhập lại mật khẩu" required>
+                <div class="error-message" id="confirmPasswordError">Mật khẩu xác nhận không khớp</div>
+            </div>
+            
+            <div class="terms">
+                <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                <label for="agreeTerms">Tôi đồng ý với <a href="#">Điều khoản dịch vụ</a> và <a href="#">Chính sách bảo mật</a></label>
+            </div>
+            <div class="error-message" id="termsError">Bạn cần đồng ý với điều khoản dịch vụ</div>
+            
+            <div class="success-message" id="successMessage">Đăng ký thành công! Bạn có thể đăng nhập ngay bây giờ.</div>
+            
+            <button type="submit" class="btn-register">Đăng ký tài khoản</button>
+        </form>
+        
+        <div class="login-link">
+            Đã có tài khoản? <a href="login.html">Đăng nhập ngay</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Reset error messages
+            document.querySelectorAll('.error-message').forEach(function(el) {
+                el.style.display = 'none';
+            });
+            document.getElementById('successMessage').style.display = 'none';
+            
+            // Get form values
+            const hoten = document.getElementById('hoten').value.trim();
+            const username = document.getElementById('username').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm_password').value;
+            const agreeTerms = document.getElementById('agreeTerms').checked;
+            
+            let isValid = true;
+            
+            // Validate Họ tên
+            if (hoten.length < 2) {
+                document.getElementById('hotenError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate Tên đăng nhập
+            if (username.length < 4) {
+                document.getElementById('usernameError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate Email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate Mật khẩu
+            if (password.length < 6) {
+                document.getElementById('passwordError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate Xác nhận mật khẩu
+            if (password !== confirmPassword) {
+                document.getElementById('confirmPasswordError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate Điều khoản
+            if (!agreeTerms) {
+                document.getElementById('termsError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // If form is valid, show success message
+            if (isValid) {
+                document.getElementById('successMessage').style.display = 'block';
+                // In a real application, you would submit the form to a server here
+                // For this example, we'll just reset the form after a delay
+                setTimeout(function() {
+                    document.getElementById('registerForm').reset();
+                    document.getElementById('successMessage').style.display = 'none';
+                }, 3000);
+            }
+        });
+        
+        // Real-time validation for password confirmation
+        document.getElementById('confirm_password').addEventListener('input', function() {
+            const password = document.getElementById('password').value;
+            const confirmPassword = this.value;
+            
+            if (confirmPassword && password !== confirmPassword) {
+                document.getElementById('confirmPasswordError').style.display = 'block';
+            } else {
+                document.getElementById('confirmPasswordError').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
