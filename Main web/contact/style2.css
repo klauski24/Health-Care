@@ -1,21 +1,4 @@
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    width: 100%;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    font: 14px ginto, helvetica, arial, sans-serif;
-    font-weight: 700;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-}
 .menu-header{
     display: flex;
     align-items: center;
@@ -67,7 +50,7 @@ header{
     color: #0d47a1;
 }
 main{
-    margin-top: 94px;
+    margin-top: 100px;
 }
 .main-banner-text{
     background-image: url('./Picture/main-banner.png');
@@ -170,6 +153,127 @@ main{
     line-height: 5rem;
     color: #0578FF;
 }
-.rotating-services-warpper {
+
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
     
-}
+    .chuyenkhoa-header { 
+      margin-top : 50px;
+      margin-left : 60px;
+    } 
+    
+    .doctor-card {  
+      width: 300px;
+      margin-left : 30px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      flex: 0 0 300px;/*Không được co, không được giãn, luôn giữ đúng 300px */  
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    
+    .doctor-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .doctor-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    
+    .doctor-avatar {
+      width: 80px;      /* Cố định chiều rộng */
+    height: 80px;     /* Cố định chiều cao */
+    min-width: 80px;  /* Ngăn Flexbox bóp nhỏ ảnh */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    background-color: #ffffff;
+    }
+    
+    .doctor-info h3 {
+      margin: 0 0 5px 0;
+      color: #2c3e50;
+    }
+    
+    .doctor-info p {
+      margin: 5px 0;
+      color: #7f8c8d;
+    }
+    
+    .doctor-details {
+      margin-top: 15px;
+    }
+    
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .detail-label {
+      font-weight: bold;
+      color: #34495e;
+    }
+    
+    .detail-value {
+      color: #2c3e50;
+    }
+    
+    .rating {
+      color: #f39c12;
+      font-weight: bold;
+    }
+    
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      padding: 0 20px;
+    }
+    
+    .search-box {
+      width: 60%;
+      padding: 12px 20px;
+      border: 2px solid #3498db;
+      border-radius: 25px 0 0 25px;
+      font-size: 16px;
+    }
+    
+    .search-button {
+      padding: 12px 25px;
+      background-color: #3498db;
+      color: white;
+      border: 2px solid #3498db;
+      border-radius: 0 25px 25px 0;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    .search-button:hover {
+      background-color: #2980b9;
+    }
+    
+    .container h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin: 20px 0;
+    }
+    .xemthongtin{
+                border: 1px solid black;
+                border-radius: 7px;
+                background-color: #aaea33ff;
+                color: black;
+                text-decoration: none;
+                padding: 5px 10px;
+        }
+

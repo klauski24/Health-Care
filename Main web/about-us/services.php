@@ -1,18 +1,11 @@
 <?php
-    require_once 'connect.php';
-    $sql = "SELECT * FROM dich_vu ORDER BY id DESC";
-    $result = $conn->query($sql);
+require_once 'connect.php';
+$sql = "SELECT * FROM dich_vu ORDER BY id DESC";
+$result = $conn->query($sql);
 ?>
-
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dịch Vụ Cao Cấp - Healthcare</title>
     <style>
-        body {
-            margin: 0;
+        .services-page {
+            margin-top: 94px;
         }
         .tieude1 {
             background: linear-gradient(#130569, rgba(10, 122, 174, 0.8));
@@ -134,8 +127,7 @@
             height: 50px; 
         }
     </style>
-</head>
-<body>
+<div class="services-page">
     <div class="tieude1">
             <div class="tieude11">
                 <h2>Dịch Vụ Healthcare</h2>
@@ -166,12 +158,12 @@
                         <h2 class="ten-dv"><?php echo htmlspecialchars($row["ten_dich_vu"]); ?></h2>
                         <p><?php echo htmlspecialchars($row["mo_ta"]); ?></p>
                         <div style="display: flex; justify-content: center; gap: 20px;">
-                            <a href="xemchitietdichvu.php?service_id=<?php echo $row['id']; ?>" 
+                            <a href="index.php?page_layout=xemchitietdichvu&service_id=<?php echo $row['id']; ?>" 
                                 class="xemchitiet" 
                                 onclick="return xacNhanXem('<?php echo $row['ten_dich_vu']; ?>')">
                                 Xem chi tiết
                             </a>
-                            <a href="book.php?service_id=<?php echo $row['id']; ?>" 
+                            <a href="index.php?page_layout=khamdichvu&service_id=<?php echo $row['id']; ?>" 
                                 class="datlich" 
                                 onclick="return xacNhanDatLich('<?php echo $row['ten_dich_vu']; ?>')">
                                 Đặt lịch khám
@@ -225,6 +217,4 @@
         return confirm("Bạn muốn đăng ký đặt lịch cho dịch vụ: " + ten + " ư?");
     }
 </script>
-</body>
-</html>
-<?php $conn->close(); ?>
+</div>

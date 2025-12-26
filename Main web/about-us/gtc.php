@@ -102,7 +102,7 @@
             <span class="span4">Vươn tầm Thế giới</span>
         </div>
         <div class="tieude2">
-            <img src="vien2.jpeg">
+            <img src="about-us/vien2.png">
             <h3> Healthcare - Nơi trao gửi niềm tin cho sức khỏe và cộng đồng</h3>
             <p>Được thành lập với sứ mệnh mang lại những giá trị tốt nhất cho khách hàng, Healthcare tự hào là đơn vị tiên phong trong lĩnh vực tư vấn/chăm sóc sức khỏe/dịch vụ khách hàng. chúng tôi không chỉ cung cấp các giải pháp chuyên môn đơn thuần, mà còn hướng tới việc xây dựng một hệ sinh thái chăm sóc toàn diện, nơi mỗi khách hàng đều cảm thấy được thấu hiểu, trân trọng và đồng hành. Với phương châm "Khách hàng là trọng tâm - Chất lượng là danh dự", chúng tôi không ngừng nỗ lực để tối ưu hóa quy trình, cập nhật những công nghệ và kiến thức tiên tiến nhất, nhằm mang lại sự hài lòng và an tâm tuyệt đối cho quý khách khi lựa chọn dịch vụ của Viện.</p>
             <div class="gach" style="width: 100%"></div>

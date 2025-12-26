@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Health Care</title>
+  <title>Chăm Sóc Sức Khỏe</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -12,78 +12,77 @@
   <div class="main-content">
     <div class="main-banner-text">
       <div class="banner-text">
-        <h1>Comprehensive healthcare just got less painful</h1>
-        <p><b>Now</b> become a <b>free user</b> while attending at<b><br> HaNoi University of Mining and Geololy</b></p>
-        <button>Make an Appointment</button>
-        <br><br><br><a href="#">Learn More</a>
-        <p>Already a HUMG member? <a href="#">Follow these steps</a> to apply the HUMG club.</p>
-        <p>Have a company sponsored membership? <a href="#">Click here.</a></p>
+        <h1>Chăm sóc sức khỏe toàn diện trở nên dễ dàng hơn</h1>
+        <p><b>Ngay bây giờ</b> trở thành <b>người dùng miễn phí</b> khi tham gia tại <b><br>Trường Đại học Mỏ - Địa chất Hà Nội</b></p>
+        <button>Đặt Lịch Hẹn</button>
+        <br><br><br><a href="#">Tìm Hiểu Thêm</a>
+        <p>Đã là thành viên HUMG? <a href="#">Làm theo các bước này</a> để tham gia câu lạc bộ HUMG.</p>
+        <p>Có thành viên được công ty tài trợ? <a href="#">Nhấp vào đây.</a></p>
       </div>
       <div class="page-hero-three-col-preview">
         <div class="col">
-          <div class="img-wrap"><img src="./Picture/mental-health.png" alt="Expert Doctors"></div>
-          <h6>EXPERT DOCTORS</h6>
-          <h3>Dedicated to your health.</h3>
-          <p><b>Learn more ></b></p>
+          <div class="img-wrap"><img src="./Picture/mental-health.png" alt="Bác Sĩ Chuyên Gia"></div>
+          <h6>BÁC SĨ CHUYÊN GIA</h6>
+          <h3>Cam kết với sức khỏe của bạn.</h3>
+          <p><b>Tìm hiểu thêm ></b></p>
         </div>
         <div class="col">
-          <div class="img-wrap"><img src="./Picture/doctor-care.png" alt="Advanced Technology"></div>
-          <h6>ADVANCED TECHNOLOGY</h6>
-          <h3>Technology that improves care.</h3>
-          <p><b>Learn more ></b></p>
+          <div class="img-wrap"><img src="./Picture/doctor-care.png" alt="Công Nghệ Tiên Tiến"></div>
+          <h6>CÔNG NGHỆ TIÊN TIẾN</h6>
+          <h3>Công nghệ cải thiện chăm sóc.</h3>
+          <p><b>Tìm hiểu thêm ></b></p>
         </div>
         <div class="col">
-          <div class="img-wrap"><img src="./Picture/booking-health.png" alt="Personalized Care"></div>
-          <h6>PERSONALIZED CARE</h6>
-          <h3>Care tailored just for you.</h3>
-          <p><b>Learn more ></b></p>
+          <div class="img-wrap"><img src="./Picture/booking-health.png" alt="Chăm Sóc Cá Nhân Hóa"></div>
+          <h6>CHĂM SÓC CÁ NHÂN HÓA</h6>
+          <h3>Chăm sóc được thiết kế riêng cho bạn.</h3>
+          <p><b>Tìm hiểu thêm ></b></p>
         </div>
       </div>
     </div>
     <div class="main-banner-doctor-love">
-      <h1>Fall in love with your <br>doctor’s office</h1>
-      <p>We accept most major health insurance plans for scheduled in-</p>
-      <p>office and remote visits just like a typical doctor’s office, but we</p>
-      <p>make it faster, easier, and more enjoyable to get care.</p>
-      <h6>See insurance plans we accept ></h6>
+      <h1>Yêu thích phòng khám của <br>bác sĩ của bạn</h1>
+      <p>Chúng tôi chấp nhận hầu hết các kế hoạch bảo hiểm y tế chính cho các cuộc hẹn</p>
+      <p>tại phòng khám và từ xa giống như một phòng khám bác sĩ thông thường, nhưng chúng tôi</p>
+      <p>làm cho việc chăm sóc trở nên nhanh hơn, dễ dàng hơn và thú vị hơn.</p>
+      <h6>Xem các kế hoạch bảo hiểm chúng tôi chấp nhận ></h6>
     </div>
     <div class="services-section">
       <div class="services-detail">
         <div class="services-detail-row">
           <img src="./Picture/generl-checkup.png">
-          <p>Routine health examinations</p>
-          <p><b>General Checkup ></b></p>
+          <p>Khám sức khỏe định kỳ</p>
+          <p><b>Khám Tổng Quát ></b></p>
         </div>
         <div class="services-detail-row">
           <img src="./Picture/mental-health-care.png">
-          <p>Support for mental wellbeing</p>
-          <p><b>Mental Health Care ></b></p>
+          <p>Hỗ trợ sức khỏe tinh thần</p>
+          <p><b>Chăm Sóc Sức Khỏe Tâm Thần ></b></p>
         </div>
         <div class="services-detail-row">
           <img src="./Picture/Online-Consultation.png">
-          <p>Meet doctors remotely</p>
-          <p><b>Online Consultation ></b></p>
+          <p>Gặp bác sĩ từ xa</p>
+          <p><b>Tư Vấn Trực Tuyến ></b></p>
         </div>
       </div>
       <div class="services-detail">
         <div class="services-detail-row">
           <img src="./Picture/Emergency-Care.png">
-          <p>Quick response services</p>
-          <p><b>Emergency Care ></b></p>
+          <p>Dịch vụ ứng cứu nhanh</p>
+          <p><b>Chăm Sóc Khẩn Cấp ></b></p>
         </div>
         <div class="services-detail-row">
           <img src="./Picture/Medical-Testing.png">
-          <p>Accurate diagnostic services</p>
-          <p><b>Medical Testing ></b></p>
+          <p>Dịch vụ chẩn đoán chính xác</p>
+          <p><b>Xét Nghiệm Y Tế ></b></p>
         </div>
         <div class="services-detail-row">
           <img src="./Picture/Pharmacy Support.png">
-          <p>Prescription and medication care </p>
-          <p><b>Pharmacy Support ></b></p>
+          <p>Chăm sóc đơn thuốc và thuốc men</p>
+          <p><b>Hỗ Trợ Nhà Thuốc ></b></p>
         </div>
       </div>
     </div>
-    
   </div>
 </main>
 </body>

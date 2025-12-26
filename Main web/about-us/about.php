@@ -1,4 +1,5 @@
     <style>
+
         body { 
             margin: 0px;
         }
@@ -13,7 +14,7 @@
         .tieude1 img {
             width: 20%;
             height: 40vh;
-            
+            border-radius: 0px 5px 50px 0px;
             margin-right: 120px;
         }
         .container {             
@@ -51,7 +52,7 @@
     ?>
     <main>
         <div class="tieude1">
-            <img src="vien.jpg">
+            <img src="about-us/vien.png">
             <div>
                 <div class="container">
                     <h1>Về Chúng Tôi</h1>

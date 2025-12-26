@@ -248,6 +248,10 @@ footer{
     font-weight: 700;
     width: 200px;
 }
+.footer-sign-up a{
+    text-decoration: none;
+    color: #1679C4;
+}
 .footer-about-us{
     width: 95%;
     margin: auto;
@@ -284,4 +288,7 @@ footer{
 }
 .footer-links-column a:hover {
     color: white;
+}
+.main-content{
+    padding-bottom: 40px;
 }

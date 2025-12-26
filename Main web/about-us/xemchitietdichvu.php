@@ -1,6 +1,6 @@
 <?php
 // 1. DATABASE: Kết nối và truy vấn thông tin
-require_once 'connect.php';
+include(__DIR__ . '/../connect.php');
 
 $id = isset($_GET['service_id']) ? intval($_GET['service_id']) : 0;
 $sql = "SELECT * FROM dich_vu WHERE id = $id";
@@ -11,12 +11,6 @@ if (!$result || $result->num_rows == 0) {
 }
 $row = $result->fetch_assoc();
 ?>
-
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $row['ten_dich_vu']; ?> - Chi tiết dịch vụ</title>
     
     <style>
@@ -104,8 +98,7 @@ $row = $result->fetch_assoc();
             transform: translateY(-2px); 
         }
     </style>
-</head>
-<body>
+<main>
 
     <div class="container">
         <div class="anh">
@@ -125,9 +118,9 @@ $row = $result->fetch_assoc();
         </div>
 
         <div class="ngang">
-            <a href="services.php" class="quaylai">← Quay lại danh sách</a>
+            <a href="index.php?page_layout=services" class="quaylai">← Quay lại danh sách</a>
             <button onclick="shareService()" class="share">Chia sẻ dịch vụ</button>
-            <a href="book.php?service_id=<?php echo $row['id']; ?>" class="datlich">Đặt lịch khám ngay</a> 
+            <a href="index.php?page_layout=khamdichvu&service_id=<?php echo $row['id']; ?>" class="datlich">Đặt lịch khám ngay</a> 
         </div>   
     </div>
     <div style="height: 50px;"></div>
@@ -151,6 +144,5 @@ $row = $result->fetch_assoc();
         };
     </script>
 
-</body>
-</html>
+</main>
 <?php $conn->close(); ?>
