@@ -40,7 +40,6 @@ function validateStepAccess($currentStep)
         }
     }
 
-    // 🔒 THÊM KIỂM TRA CHO BƯỚC 4
     if ($currentStep == 4) {
         if (
             !isset($_SESSION['password_reset_completed']) ||
